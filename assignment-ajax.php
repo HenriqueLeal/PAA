@@ -67,7 +67,7 @@ $obj->start($costs);
 
 echo "Solução:<br>";
 foreach($obj->getBestState() as $key => $item):
-	echo "Funcionário ".($key + 1)." fará a <b>Tarefa ".($item + 1)."</b><br>";
+	echo "Pessoa ".($key + 1)." associada à <b>Tarefa ".($item + 1)."</b><br>";
 endforeach;
 echo "O custo total será de: <b>".$obj->getBestSolution()."</b>";
 ?>

@@ -61,7 +61,7 @@
 			if(numJobs != '' || numPerson != ''){
 				for(var i=0; i<numPerson; i++){
 					var col = $('<div class="col-lg-2">').appendTo('#appendForm');
-					col.append('<h4>Funcionário '+(i + 1)+'</h4>');
+					col.append('<h4>Pessoa '+(i + 1)+'</h4>');
 					for(var j=0; j<numJobs; j++){
 						var x = document.createElement("input");
 						x.setAttribute("type", "text");
