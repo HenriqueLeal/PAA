@@ -8,7 +8,8 @@
    <div class="login-page">
   <div class="form">
     Trabalho de Projeto de Analise de Algoritmos <br /> <br />
-    <a href="assignment.php"><button> Associação de Tarefas (<i>Branch And Bound</i>)</button></a>
+    <a href="assignment.php"><button> Associação de Tarefas (<i>Branch And Bound</i>)</button></a><br /><br />
+    <a href="knapsack.php"><button> Mochila Fracionária (<i>Algoritmo Guloso</i>)</button></a>
   </div>
 </div>
    <div class="imagem">
