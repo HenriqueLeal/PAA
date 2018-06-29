@@ -6,13 +6,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1>Mochila Fracionária</h1>
+			<h1>Mochila Booleana</h1>
 		</div>
 		<div class="col-lg-6">
-			<h2>Cadastro dos Itens</h2>
+			<h2>Formulário de itens</h2>
 			<form>
 				<div class="form-group">
 					<label for="Nome">Nome</label>
@@ -26,15 +27,15 @@
 					<label for="Valor">Valor</label>
 					<input type="text" class="form-control" id="value" placeholder="Valor">
 				</div>
-				<button type="button" class="btn btn-default" id="add">Colocar Item</button>
-				<button type="button" class="btn btn-danger" id="reset">Esvaziar Itens</button>
+				<button type="button" class="btn btn-default" id="add">Adicionar Item</button>
+				<button type="button" class="btn btn-danger" id="reset">Resetar Tudo</button>
 			</form>
 		</div>
 		<div class="col-lg-6">
-			<h2>Cadastro dos Itens</h2>
+			<h2>Tabela de Itens</h2>
 			<table class="table table-hover">
 				<thead>
-					<th>Código</th>
+					<th>#</th>
 					<th>Nome</th>
 					<th>Peso</th>
 					<th>Valor</th>
@@ -91,9 +92,8 @@
 	});
 
 	$('#calculate').click(function(event) {
-		
-			weightBag = $('#weightBag').val();
-		$.post('knapsack-ajax.php', {items: items, weights:weights, values:values, weightBag: weightBag}, function(data, textStatus, xhr) {
+		weightBag = $('#weightBag').val();
+		$.post('mochilaAjax.php', {items: items, weights:weights, values:values, weightBag: weightBag}, function(data, textStatus, xhr) {
 			$('#result').html(data);
 		}, "html");
 	});
